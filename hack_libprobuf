@@ -1,0 +1,51 @@
+#!/bin/bash
+
+
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/bin/cnd
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/bin/cnd
+
+#sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libsettings.so
+#sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libsettings.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libsettings.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libsettings.so
+
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libcne.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libcne.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libcne.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libcne.so
+
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libcneapiclient.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libcneapiclient.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libcneapiclient.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libcneapiclient.so
+
+# libwms.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libwms.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libwms.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libwms.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libwms.so
+
+# libwqe.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libwqe.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/libwqe.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libwqe.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/libwqe.so
+
+# libwvdrmengine.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/mediadrm/libwvdrmengine.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib64/mediadrm/libwvdrmengine.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/mediadrm/libwvdrmengine.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/vendor/lib/mediadrm/libwvdrmengine.so
+
+
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/lib/libprotobuf-cpp-full.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/lib/libprotobuf-cpp-lite.so
+sed -i 's/libprotobuf-cpp-full/libprotobuf-cpp-oreo/g' proprietary/lib64/libprotobuf-cpp-lite.so
+sed -i 's/libprotobuf-cpp-lite/libprotobuf-cpp-oreo/g' proprietary/lib64/libprotobuf-cpp-full.so
+
+mv proprietary/lib/libprotobuf-cpp-full.so proprietary/lib/libprotobuf-cpp-oreo.so
+mv proprietary/lib/libprotobuf-cpp-lite.so proprietary/lib/libprotobuf-cpp-oreo.so
+
+mv proprietary/lib64/libprotobuf-cpp-full.so proprietary/lib64/libprotobuf-cpp-oreo.so
+mv proprietary/lib64/libprotobuf-cpp-lite.so proprietary/lib64/libprotobuf-cpp-oreo.so
+
